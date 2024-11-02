@@ -15,6 +15,7 @@ const Author = mongoose.model('Author', authorSchema);
 
 const courseSchema = new mongoose.Schema({
   name: String,
+ 
 });
 
 const Course = mongoose.model('Course', courseSchema);
@@ -56,5 +57,6 @@ async function listCourses() {
   }
 }
 
-//createCourse('Node.js', createAuthor());
-listCourses()
+//createAuthor("Moslem", "My bio", "My website")
+//createCourse('Node.js', '67265a09d2a2f1497af75416');
+//listCourses()
