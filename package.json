@@ -1,0 +1,9 @@
+{
+  "name": "nosql-modeling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^8.8.0"
+  }
+}
