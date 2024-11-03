@@ -1,0 +1,14 @@
+##Transaction
+Transactions are useful when you need to make multiple changes to the database
+at once and want to ensure either all changes are saved or none are, to keep 
+your data consistent.
+
+#Scenario
+Let’s say you have two collections:
+
+User: stores user information with a balance.
+Order: stores orders placed by users.
+
+You want to create an order only if the user has enough balance. If any part of the 
+process fails (like deducting the balance or saving the order),
+neither action should be saved to keep the data consistent.
